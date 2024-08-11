@@ -1,0 +1,111 @@
+th:nth-child(1),
+td:nth-child(1) {
+  color: red; /* Mengatur warna hari Minggu menjadi merah */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.calendar {
+  width: 420px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#month-year {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+  width: 14.28%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px;
+}
+
+td {
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  vertical-align: top;
+  position: relative;
+  padding: 4px 2px; /* Mengurangi padding untuk memberikan lebih banyak ruang */
+}
+
+td:hover {
+  background-color: #e9ecef;
+}
+
+td.today {
+  background-color: #ffdd57;
+  color: #333;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+td span {
+  display: block;
+  color: blue;
+  font-size: 2px; /* Mengurangi ukuran font */
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1; /* Menyempitkan line height */
+}
